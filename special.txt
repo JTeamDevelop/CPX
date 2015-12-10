@@ -1,0 +1,310 @@
+cpxVar.classes.brute = {name:"Brute", special:["brawler","slugger","hardened"]};
+cpxVar.classes.soldier = {name: "Soldier", special:["bounty","commando","tacdef","hardened","tank"]};
+cpxVar.classes.officer = {name: "Officer"};
+
+cpxVar.classes.elemental = {name:"Elemental"};
+cpxVar.classes.psion = {name:"Psion"};
+cpxVar.classes.wizard = {name:"Wizard"};
+
+cpxVar.classes.diplomat = {name:"Diplomat"};
+cpxVar.classes.engineer = {name:"Engineer"};
+cpxVar.classes.healer = {name:"Healer"};
+
+cpxVar.classes.rogue = {name:"Rogue"};
+cpxVar.classes.investigator = {name:"Investigator"};
+cpxVar.classes.agent = {name:"Agent" };
+
+
+cpxVar.abilities = {};
+
+cpxVar.abilities.dodge = {name:"Dodge", info: "Once per day, ignore the damage from a single attack."}
+//Soldier
+cpxVar.abilities.bounty = {name:"Bounty Hunter", info:  "You are licensed and trained in the pursuit and apprehension of beings with bounties on their head. When fighting or subduing them, add +1 die to damage, discarding the lowest result." };
+cpxVar.abilities.commando = {name:"Commando", info:  "Get +3 to all ranged attack damage when you are firing from a superior position on the field. Also, the weight of your armor should never have a negative effect on your ability to move stealthily." };
+cpxVar.abilities.tacdef = {name:"Tactical Defense", info:  "Any Hirelings under your command get +1 to Armor as long as they can see and hear you." };
+cpxVar.abilities.tank = {name:"Tank", info:  "The weight of your armor will never change your speed to less than Fast. You can also carry an extra heavy item." };
+//Brute
+cpxVar.abilities.brawler = {name:"Brawler", info:  "When outnumbered by enemies, you get +1 to armor." };
+cpxVar.abilities.hardened = {name:"Hardened", info:  "Add +6 to your Vitality." };
+cpxVar.abilities.slugger = {name:"Slugger", info:  "Your unarmed attacks become light melee weapons and, when wielding a heavy melee weapon, you get +2 damage to attacks." };
+
+
+###
+
+^ Gray: You walk the line between light and darkness. You can attempt to force choke or force lightning a nearby victim at the risk of becoming corrupted by the Dark Side.
+^ Guardian: When you have your light saber out, your protective techniques help keep you safe from you incoming damage, granting +1 Armor.
+^ Mend: Once per day, by spending a few minutes meditating, you can remove a Condition from yourself or an ally you make physical contact with using the Force.
+^ Sentinel: You are particularly sensitive to the presence of the dark side, and can hone in on the location of dark side activity with speed and accuracy. Also, with some concentration, you can mask your presence from other force-sensitive beings.
+
+ 
+Scout: When you take the lead in a dangerous location or wilderness area to scout ahead, you always spot your targets before they spot you.
+Stalker: Add +3 damage to ranged attacks when the target doesn?t see you. Also, when you attempt to track something or someone, you can do so quickly while on the move.
+Survivalist: Once per day, you can ignore the damage or effects of an environmental hazard. Also, you always find enough food and water for yourself while surviving in the wilderness.
+
+Duck and Cover: You are an expert at using the environment for your protection, getting +1 to your armor against ranged attacks as long as you?re not out in the open.
+Opportunist: When you and your allies overpower your opponents, you inflict +2 damage.
+Quickness: As long as you?re wearing light or no armor, you always act first and can react when suddenly surprised. Your Speed is always Sprint in light armor.
+Sleaze: When you pick locks or disable security mechanisms, you can do so quite quickly and unnoticed while in plain sight.
+
+^ Smuggler: You can attempt to hide things in plain sight. In addition, once per day, even after getting thoroughly searched, you can produce a small, inexpensive and useful item from your person.
+
+Advisor: When you spend a few minutes explaining to someone how to perform a task for which you have an applicable Skill, they can roll as if they had that Skill for that one attempt.
+Bolster: Once per day, give a word of confidence and encouragement to increase an ally?s morale. They immediately heal 1d6 Vitality.
+Entourage: You have two body-guard Hirelings that accompany you at all times. They count as Goons. If they die, you can hire new ones, but you only have to pay the initial fee – after that they stay on permanently.
+Guarded: Once per day, you can redirect any attack against you to one of your Hirelings as long as they are nearby and you describe it in the fiction.
+Immunity: Your status has awarded you with some level of diplomatic immunity. You have legal documents or more shady leverage saying you cannot be arrested by local authorities and must be handed over to your superiors.
+
+
+Automaton: You do not need to breath, eat, or sleep. You do need to maintain a power source however. Vitality is represented in the fiction by surface level damage, sparks, small fires, but ultimately non-critical damage. You don?t feel pain, but you may feel stress when Wounded or Dying. As long as you aren?t disintrigrated, you can always be rebuilt and rebooted. You memory is subject to erasure.
+^ Advanced Interface: Your chassis is equipped with an advanced cyber-interface jack. If you can interface directly with a device by physically connecting to the data-input, you can attempt to use, hack, manipulate or reprogram that device without any other tools.
+^ Alloy Plating: Your internal circuitry is protected by a durable composite metal shell; get +1 to Armor against non-energy based damage.
+^ Combat Rig: You have either a Light Weapon or Plaster Pistol built into your chassis. It is retractable and concealable. You cannot be disarmed of this weapon unless you lose the limb the weapon is mounted on or a knowledgeable technician with access to a workshop spends a few hours to remove it manually. You get +1 to rolls when attacking with this weapon.
+^ Does Not Compute: Your well programmed circuitry is immune to attempts at manipulation and deceit that is emotionally based (e.g. pleading for help, playing off greed, evoking pity).
+^ Protocol: Not only are you fluent with almost every known language in the galaxy, you have a robust database of cultural knowledge pertaining to customs and etiquette for thousands of different species and nations.
+^ Hyper-processor: You have an advanced processor that can analyze situations with hyperfast speeds. Once per day, you can turn a Failure into a Problem, or a Problem into a Success.
+
+• Alchemy: You can imbue magic within a potion, salve, or item. You start with three alchemical formulas.
+• Affluent: When your purse is empty, you can attempt to make purchases with the promise of paying the money back at a later date.
+• Allure: When you seduce someone, you can make them reveal intimate secrets about themselves despite their better judgment. You can also attract someone’s attention with only a glance.
+• Backstab: Add +3 damage to melee attacks when the target is unaware of your presence. 
+• Berserk: When you are outnumbered, add +1 to the damage you inflict and +1 armor, but you must make an effort to not immediately resort to violence in heated situations.
+• Bless: with holy water, you can anoint items so they are considered holy and magical —+3 damage vs. Evil— for a short time 
+• Cloaked: When you are under the cover of darkness, you get +1 armor.
+
+• Contort: You are able to escape from bonds or squeeze into small or tight places.
+• Cutpurse: When you pick pockets or conceal things on your person, you can do so quickly while running.
+
+• Hex: You can attempt to inflict curses or ailments upon others, either with eye contact or through a fetish.
+• Daring: Once per day, you can ignore the damage or effects of an environmental hazard.
+
+• Disguise: When you use costumes and makeup, you can attempt to convincingly imitate other people, or ensure your own identity is unrecognizable.
+
+• Duelist: You treat any one-handed weapon as Light.
+
+
+• Familiar: You have an animal companion, such as a crow, rat, cat, snake or spider, magically bonded to you. You can see through its eyes, and hear what it hears.
+• Full-contact magic: you can channel spells through your fists in melee. If you hit successfully, you can send one Wizardry spell through your fists into your opponent. You remain unharmed, even if that spell affects and area around you.
+• Brawny: +1 melee and thrown weapons damage, can re-roll damage once per attack
+
+
+• Guarded: Once per day, you can redirect any attack against you to one of your Hirelings.
+
+• Heavy Hands/Feet: you do 1d6 unarmed damage. On level 3,5,7 and 9, you get an additional +1 damage.
+• Hunter: Add +3 damage to ranged attacks when the target is unaware of your presence.
+
+• Instinct: You can re-roll DEX when reacting to dangerous situations.
+• Linguist: You can speak and read all civilized languages.
+• Lookout: When you take the lead in the city or a dungeon, you always spot your targets before they spot you.
+
+• Magic-fueled hit points: you have additional hit points (as many as your Power score). For each Wizardry spell you use, you lose 1 or 2 of those additional hp.
+• Mind Shield: you are immune against fear, charm and sleep spells.
+
+
+• Pet: You have a loyal and effective animal companion.
+• Prestige: Everyone knows who you are. Halve the price of any Hirelings, as they seek your employ in order to gain later favors or advantages.
+• Reflexes: You always act first, and can react when suddenly surprised.
+• Rockskin: You have rock-hard skin (Armor 2).
+• Rover: When you run through the wilderness, you do so without leaving obvious tracks or a trail.
+• Sailor: You can crew a sailing vessel, and never feel ill due to stormy seas.
+• Sapper: When using blackpowder explosives or artillery, add +1 die to damage, discarding the lowest result.
+• Schemer: When you bribe or blackmail others, you can do so subtly or through third parties, without drawing too much unwanted attention to yourself.
+• Scout: When you take the lead in the wilderness, you always spot your targets before they spot you.
+• Skirmish: +1 damage and worn armor counts as one type lighter.
+
+• Summon: You can call forth demons to seek their counsel...or so you can bind them to serve you. You start with two bound demons that you can call upon.
+
+Talented: Add +1 Skill.
+• Tinker: When you pick locks or disable traps, you can do so quickly and unnoticed while in plain sight.
+
+• Tracker: When you attempt to identify and follow tracks, you can do so quickly while on the move.
+• Trick: You can attempt to distract or delay your opponent with your antics.
+• Turn: You can attempt to hold undead at bay with the power of your faith and a holy symbol
+• Vehemence: When you use damaging magic effects, add +1 die to Damage, discarding the lowest result.
+• Vision: Drink holy water to commune with your deity for divine guidance.
+
+• Warded: When you are using magic, your protective wards keep you safe, granting +1 Armor.
+• Wild: You can converse with and attempt to command animals.
+
+• WTF?: you get a bonus to roll against opponents that haven't fought against you. This bonus is lost after the first confrontation. As long as an opponent has not yet battled against you, you are granted this bonus.
+
+
+Powers
+Super Agility - Athletics
+//You can defy gravity and leap, flip, tumble, and climb with superhuman agility.
+Super Strength - Physique
+Invisibility - Stealth
+
+*Alteration
+Ability Boost
+Alternate Form
+Duplication
+Growth
+Invisibility
+Phasing
+Shrinking
+-Animal Mimicry
+Material Mimicry
+Stretching
+Transformation
+
+*Control
+Element Control
+Time Control
+-Healing
+-Telekinesis
+Transmutation
+-Cosmic Power
+-Gadgets
+-Magic 
+Nullification
+
+*Defenseive
+Absorption
+Force Field
+Immortality
+Life Support
+Reflection
+Regeneration
+Resistance
+
+*Mental
+Emotion Control
+-Illusion, Images
+Mental Blast
+Mind Control
+Mind Shield
+Telepathy
+
+*Offensive
+Affliction
+Binding
+Blast
+Strike
+Aura
+Dazzle
+Energy Drain
+Fast Attack
+Stunning
+
+Movement 
+Burrowing
+Flight
+Leaping
+Super-Speed
+Swinging
+Teleportation
+Wall-Crawling
+
+Sensory
+Detection
+-Divination: ESP, Postcognition, Precognition
+Super-Senses
+Danger Sense
+Interface
+
+
+
+Alteration
+Ability Boost, Ability Increase, Alter Ego, Alternate Form, Aquatic, Density
+Duplication, Extra Body Parts, Growth, Invisibility, Phasing, Shrinking
+Animal Mimicry, Material Mimicry, Plant Mimicry, Power Mimicry, Stretching, Transformation
+
+Control = [ctl1,ctl2,ctl3]
+ctl1 = Alteration Ray, Alteration Ray, Element Control, Element Control, Probability Control, Time Control
+ctl2 = Energy Control, Energy Control, Healing, Telekinesis, Telekinesis, Transmutation
+ctl3 = Cosmic Power, Gadgets, Gadgets, Magic, Nullification, Servant
+
+Defenseive = [def1,def2,def3]
+def1 = Absorption, Absorption, Adaptation, Force Field, Force Field, Force Field
+def2 = Immortality, Life Support, Life Support, Life Support, Reflection, Reflection
+def3 = Regeneration, Resistance, Resistance
+
+Mental = [mnt1,mnt2]
+mnt1= Astral Projection, Dream Control, Emotion Control, Emotion Control, Illusion, Images
+mnt2= Mental Blast, Mental Blast, Mind Control, Mind Shield, Telepathy, Telepathy
+
+Offensive = [off1,off2]
+off1= Affliction, Binding, Blast, Blast, Strike, Strike
+off2 = Aura, Dazzle, Dazzle, Energy Drain, Fast Attack, Stunning
+
+Movement = [move1,move2]
+move1 = Burrowing, Dimensional Travel, Flight, Flight, Leaping, Leaping
+move2 = Spinning, Super-Speed, Super-Speed, Swinging, Teleportation, Wall-Crawling
+
+Sensory = [sns1,sns2]
+sns1 = Detection, Detection, ESP, Super-Senses, Super-Senses, Super-Senses
+sns2 = Danger Sense, Danger Sense, Interface, Postcognition, Precognition, Precognition
+
+
+^ Academics: You are well-read in politics, histories and cultures, both local and foreign.
+^ Athletics: Training to increase your fitness, mobility, and resistance to fatigue.
+^ Awareness: A keen perceptiveness, curiosity, and an eye for detail.
+^ Deception: Quick wits, cunning, a love of exaggeration and a knack for cheating.
+^ Influence: You have an ear for gossip, the gift of gab, and a knack for appeasing foul moods and hurt feelings.
+^ Leadership: You have a commanding presence and an iron-clad confidence.
+^ Navigation: Training in the charting of courses across the land, sea, air, or space via maps or astronavigation software.
+^ Piloting: Controlling or driving any type of vehicle in stressful situations or when trying to pull of stunts.
+^ Stealth: You have a light foot, quick hand, and an ability to intrude where you do not belong.
+^ Survival: You are well familiar with orienteering and living in the wilderness unaided.
+^ Tech: Training in various technologies, such as electronics, software, mechanics, and engineering.
+^ Treatment: You know how to diagnose illnesses, tend to wounds, and soothe pains with ointments and medicines.
+
+
+
+
+
+
+/////
+
+cpxVar.abilities.Jack = new CPX.Ability("Jack of All Trades");
+//You dabble in just about everything. Get +1 to any Attribute rolls in where you are not using a Skill.
+cpxVar.abilities.Getaway = new CPX.Ability("Getaway");
+//Once per day, you can automatically flee a location sprinting, dodging, and ducking to avoid pursuit.
+cpxVar.abilities.Hacker = new CPX.Ability("Hacker",{modTrouble:["Burglary", "Investigate", "Technical"]});
+//You can use the Technology Skill to hack into computers and take control of networks.
+cpxVar.abilities.Connected = new CPX.Ability("Connected",{modTrouble:["Influence", "Investigate"]});
+//You can attempt to obtain favors from other Nobles, whether getting a loan, an invitation to a party, or introductions to other important people.
+cpxVar.abilities.Strategy = new CPX.Ability("Strategy",{modTrouble:["Melee Combat", "Ranged Combat", "Unarmed Combat"]});
+//When you take a few minutes to formulate a battle plan, allies get +1 to any rolls that follow that plan.
+cpxVar.abilities.Trader = new CPX.Ability("Trader",{modTrouble:["Burglary", "Decieve", "Influence", "Knowledge"]});
+//Once per day, you can halve the price of a purchase thanks to the different connections you have with distributers, merchants, tradesman, and smugglers. Also, you can tell the approximate value of artwork and trade goods once you've inspected them without having to roll.
+cpxVar.abilities.Slay = new CPX.Ability("Slay");
+// +2 melee damage.
+//Bonus to damage if skill is melee or unarmed
+cpxVar.abilities.Cure = new CPX.Ability("Cure",{modTrouble:["Arcana", "Empathy", "Influence"]});
+// You can neutralize poisons, remove curses and heal wounds without a touch.
+cpxVar.abilities.Diplomat = new CPX.Ability("Diplomat",{modTrouble:["Empathy", "Influence", "Leadership"]});
+// You can enter negotiations, bargain, or parley, even with the most disagreeable of people, as long as they are intelligent enough to understand you.
+cpxVar.abilities.Divination = new CPX.Ability("Divination",{modTrouble:["Arcana", "Knowlege", "Investigate"]});
+// When you gaze into a crystal or a bowl of holy water, you can attempt to see events either far away, in the past, or in the future.
+cpxVar.abilities.Engineer = new CPX.Ability("Engineer",{modTrouble:["Burglary", "Technical", "Knowledge"]});
+// With the Crafting skill, you can create and repair devices of all kinds. You have a sizable workshop in a permanent location with a Specialist on retainer. Outside of the workshop, Also, you can make temporary repairs in a fraction of the time it takes a normal person using scavenged parts.
+cpxVar.abilities.Expert = new CPX.Ability("Expert");
+// Once per day, you can turn a Miss into a Partial Success.
+//like jack
+cpxVar.abilities.Gadgetry = new CPX.Ability("Gadgetry");
+// You try to solve any problem with gadgets you build. Anytime you attempt something risky, you roll +INT (you‘re using a gadget designed for exactly that problem). A Miss means the gadget does not what it should (GM‘s discretion). At Level 3, you design a device that replicates a Sorcery spell three times a day. At Levels 6 and 9, you each get one additional device that replicates another Sorcery spell.
+//Never fail with technical
+cpxVar.abilities.Inspire = new CPX.Ability("Inspire",{modTrouble:["Influence", "Leadership", "Performance"]});
+// You can attempt to sway public opinion with your song, stories, or rhetoric.
+cpxVar.abilities.Lucky = new CPX.Ability("Lucky");
+// Once per day, you can turn any Miss into a Success instead.
+//like jack
+cpxVar.abilities.Pacify = new CPX.Ability("Pacify",{modTrouble:["Influence", "Deceive", "Performance"]});
+// you can attempt to pacify or charm (demi)intelligent creatures with your voice.
+cpxVar.abilities.Perform = new CPX.Ability("Perform",{modTrouble:["Influence", "Performance"]});
+// When you entertain a crowd, you can earn d6s per Level each day. However, should any die roll a 1, the audience turns nasty and you won’t be allowed to perform for at least a  week without having rotten vegetables thrown at you.
+cpxVar.abilities.Sleuth = new CPX.Ability("Sleuth",{modTrouble:["Empathy", "Investigate", "Notice"]});
+// When you search for clues, you can do so quickly and while on the move. You can always tell when someone is lying, though you may not know the cause of their deception.
+cpxVar.abilities.Sorcery = new CPX.Ability("Sorcery",{modTrouble:["Arcana", "Melee Combat", "Ranged Combat"]});
+// You are able to cast spells that, while limited in scope, are much safer than the raw magical power of Wizardry. You start with three spells.
+cpxVar.abilities.Surgeon = new CPX.Ability("Surgeon",{modTrouble:["Knowledge", "Empathy"]});
+// With the Treatment skill, you can try to mix new medicines or bring someone back from the brink of death. 
+cpxVar.abilities.Wizardry = new CPX.Ability("Wizardry");
+// You can create magical effects drawn from the raw power of Chaos. Such effects are powerful and wondrous, and not limited in scope like Sorcery. However, the risks of weaving such energies have hazards, both extreme and varied. You start with a Power score equal to your base Hit Dice +WIS.
+//Never fail with arcana
+cpxVar.abilities.Illusions = new CPX.Ability("Illusions",{modTrouble:["Decieve", "Perfromance", "Stealth"]});
+// You can create illusions to make someone see something that isn’t there, or mesmerise them so they believe something that isn’t true.
+cpxVar.abilities.Deadeye = new CPX.Ability("Deadeye",{modTrouble:["Ranged Combat"]});
+// Add +2 damage to any ranged attack.
+//Ranged Combat, and add damage

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>CPX</title>
+  
+  <link rel="stylesheet" type="text/css" href="src/main.css">
+  <link rel="stylesheet" type="text/css" href="src/lib/animate.css">
+  <link rel="stylesheet" type="text/css" href="src/lib/jquery.simpleselect.css">
+  
+  <style type='text/css'>
+    
+  </style>
+</head>
+
+<body>
+  <div id="cpxcanvas"></div>
+
+  <div class="header" id="header-main"><h1>CPX</h1></div>
+
+  <div class="menu" id="menu-main">
+    <ul><li id="SectorGen">New</li><li id="displayType" data-type="two">Two</li>
+    </ul>
+  </div>
+
+  <div class="mainbars" id="mRight"></div>
+
+  <div class="mainbars" id="mLeft">
+    <div id="pOptions"></div>
+  </div>
+
+  <div class="center" id="rTimer"></div>
+
+  <div id="moreInfo"></div>
+
+  <div id="logMain">
+    <div class="content" id="logMainHeading"><h2>Realm Log</h2></div>
+    <div id="logMainContent"></div>
+  </div>
+
+  <div class="GMLog" id="logCulture">
+    <div class="content" id="logCultureHeading"><h2>Culture Log</h2></div>
+    <div id="logCultureContent"></div>
+  </div>
+
+  <div class="GMLog" id="logThreat">
+    <div class="content" id="logThreatHeading"><h2>Threat Log</h2></div>
+    <div id="logThreatContent"></div>
+  </div>
+
+  <div id="footer">
+    The CPX Generators is &copy;2015 <a href="mailto:jteamwebdesign@gmail.com">JTeam Design</a>
+    </br>Code is released under GPL3.
+  </div>
+
+  <div class="hidden">
+    <div class="content" id="defSector">
+	A sector is a cubic region of space 1000 light years on each side. There are four types of sectors - Starry Void, Globular Cluster, 
+	Open Cluster, and Stellar Association - depending upon the dominant star formations within the sector. A sector may contain a few 	cultures, will have a number important systems, and may have notable stellar objects.    
+    </div>
+    <div class="content" id="defSystem">
+	A system is a star/stars and its associated planets. We keep it simple and only mention the most important planet in the system, but
+	there are likely more planets. A planet has two tags that describe what makes it unique and interesting.     
+    </div>
+    <div class="content" id="habitable">
+	A world much like our own orbiting its own sun. It may vary in size, temperature and weather, but humans and other similar life forms
+	can easily adapt and live on the world. 
+    </div>
+    <div class="content" id="habitablemoon">
+	A world much like our own except that it is the moon of a gas giant. Due to the suns and gas giant the world nurtures life. It may 
+	vary in size, temperature and weather, but humans and other similar life forms can easily adapt and live on the world. 
+    </div>
+    <div class="content" id="semihabitable">
+	A world that has potential but is lacking the requirements for life like Mars. The atmosphere may be wrong or harmful, the
+	temperature may be too extreme, there could be no water - there are a number of reasons.
+    </div>
+    <div class="content" id="gasgiant">
+	A giant world of churning gas much like Jupiter or Saturn in our system. The planet may or may not have rings, and it is likely to
+	have a number of moons. The inhabitants of the world either live in cloud cities, space stations or on one of the moons.
+    </div>
+    <div class="content" id="nearorbit">
+	A planet nearer to the sun than our own and because of this it is far to hot to live on without protection. Inhabitants live
+	in protected cities beneath or on the surface.
+    </div>
+    <div class="content" id="farorbit">
+	A planet distant from the sun like Pluto. It is a cold airless rock likely to be small and ihabitants must live in protected 
+	cities beneath or on the surface.
+    </div>
+    <div class="content" id="asteroid">
+	Asteroids are large rocks in space that are typically part of a belt that orbits the sun although they may be caught and become
+	moons of other planets. Inhabitants usually live within cities built inside the asteroid and are interested in the mineral wealth of
+	the asteroid. 
+    </div>
+    <div class="content" id="defPlutocracy">
+	<p>The rich rule over a plutocracy, either by virtue of owning all the land, or simply by owning the people themselves. 
+	A loose coalition of barons, buisnessmen or guild masters maintains the status quo all the while fighting amongst themselves for 			additional power. Oppression and lack of personal liberty, as well as meager conditions for the poor, are all common staples of a 			plutocratic society.</p>
+    </div>
+    <div class="content" id="defKingdom">
+	<p>Kingdoms are ruled by succession, often with a charter or constitution that outlines the rules for succession and the powers of the 			king. A kingdom without such a constitution is effectively a tyranny, albeit one that changes hands every generation. Within the
+	constitutional kingdom, the absolute power of the monarch to execute the law and provide for the welfare of the people is tempered 
+	by the will of the peoplethemse lves as an assembly or parliament. These two sides are often in contention with one another.</p>
+    </div>
+    <div class="content" id="defTheocracy">
+	Theocracy is rule by the divine. The citizens normally answer to priests, who answer directly to the authority of some god 
+	or force of nature. Cultures under the control of a theocracy can be subject to all sorts of strange rules based upon the god or gods 		worshiped.
+    </div>
+    <div class="content" id="defTechnocracy">
+	In a technocracy, those who control technology reign supreme. These might be the few who have access to a society-domineering artificial
+	intelligence, or those who control access to the fuel for the vehicles and tools that are indispensable for everyday life. A technocracy 		is usually a more despotic kind of government, since control over resources provides an absolute leverage that ordinary citizens cannot
+	hope to confront or challenge. Life in a technocracy is often convenient and affluent, but lacks individuality and personal liberty.
+    </div>
+    <div class="content" id="defMeritocracy">
+	In a meritocracy, those most deserving of rule obtain power. What defines deserving may vary greatly on a per-culture basis. 
+	It could be that the winner of an arena tournament rules for a year, or that the richest tycoon rules, or that the most proliferant 
+	inventor is given leadership. Meritocratic leaders can vary wildly in the ir popularity, but the consensus among the public, either gladly 	or grudgingly, is that they have earned their places fair and square. This makes revolution and insurgency rare. 
+    </div>
+    <div class="content" id="defAristocracy">
+	A few nobles rule in coalition over an aristocracy. While a plutocracy rules by wealth alone, the aristocracy rules by legal power, 			politics, and espionage. The members of the aristocracy may constantly scheme for power and gain. However, raising an army 
+	or assassinating a handful of individuals is rarely enough to make one ruler, as the nobility of an aristocratic 
+	line ensures that those in power will be replaced by additional generations and descendants.
+    </div>
+    <div class="content" id="defDemocracy">
+	The culture is broadly democratic, with individual members having a formal say in the choice of leadership. This voting need not 			necessarily be based on numbers; it might be a vote with money, military power, religious influence, possession of certain 
+	biological traits, or any other metric that makes sense to the aliens. Whatever the specific currency, politics for this race 
+	tends to revolve around persuasion and diplomacy rather than use of military force to determine species-wide policies.
+    </div>
+    <div class="content" id="defRepublic">
+	In a republic the power resides in elected individuals representing the citizen body and government leaders exercise power according to 		the rule of law. 
+    </div>
+    <div class="content" id="defTribalism">
+	The culture is organized into multiple tribes based on lineage, philosophy, or geographical location. Tribes set their own laws and 		policies, and are prone to intense internal struggles over resources and status. There may exist a “paramount tribe” that inflicts its
+	will upon the others through brute strength or traditional esteem. Tribal leaders tend to be personally distinguished, and usually have
+	earned their position through personal accomplishments and the broad support of their tribemates.   
+    </div>
+    <div class="content" id="defMilitant">
+	Militant cultures value security, power, and selfsufficiency. They believe that the strong control the weak according to natural order, 		and will only show respect to outsiders capable of commanding it by a demonstration of power.
+    </div>
+    <div class="content" id="defHonorable">
+	Honorable cultures value strength, integrity, and ability. A good reputation and sincerity will take outsiders far towards becoming 		accepted in these places, as will being able to keep promises and do one’s part to aid those in need.
+    </div>
+    <div class="content" id="defProgressive">
+	Progressive cultures value innovation, exploration, and mobility. They are quick to adopt new ideas and seek out new knowledge, and are 	rarely bound by traditions or fear of change.
+    </div>
+    <div class="content" id="defArtisan">
+	Artisan cultures value beauty and aesthetics, and can create many wondrous treasures and tools. While these cultures focus primarily on 	the arts and the development of their own civilizatio ns, many are also interested in learning of the wonders in the greater world, as 		well as in  trading their artisan crafts with outsiders.
+    </div>
+    <div class="content" id="defIndustrious">
+	Industrious cultures value hard work, selfsufficiency, and ingenuity. Industrious cultures are often wary of outsiders who are not willing 	to do their fair share of work, or who would capitalize on the initiative and ideas they create.
+    </div>
+    <div class="content" id="defAscetic">
+	Ascetic cultures value peace, meditation, and introspectio n. They ofte n have strong religious traditions, and are permissive of new 	ideas, though not necessarily new ways of life. Most Ascetic cultures are content to be left alone and not to bother outsiders if they are 	not bothered.
+    </div>
+    <div class="content" id="defCommercial">
+	Commercial cultures place emphasis on wealth, good relationships, and mutual prosperity. They value outside influences that will expand 	their economies and contribute to the ease of living their citizens experience.
+    </div>
+    <div class="content" id="about">
+      <p>This project would not have been possible without God. His gifts of code and wisdom enabled everything you see.</p>
+      <p><em>Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. </em>(<a href="http://www.biblegateway.com/passage/?search=James%201:17&version=NIV" target="_blank">James 1:17</a>)</p>
+      <p>We initially designed this code/app to tell stories. The core concept came from reading Grimm's Fairy Tales to our children, as well as our love for pulp and fantasy fiction. We love reading to our children, but let's be honest reading "Hansel and Gretel", "Sweetheart Roland", "Cinderella" and the rest eight, ten, twenty times can get tedious. We thought given a format (taken from screenwriting and pulp writing) and a few standard elements pulled from the tales themselves and other fiction we could make stories just as good as what we're reading.</p> 
+      <p>Initially the app was simple - it generated basic adventures that took the place of the fairy tales. A new short tale every night for the kids - they're happy so we're happy.</p>
+      <p><em>Children are a heritage from the Lord, offspring a reward from him.</em>(<a href="http://www.biblegateway.com/passage/?search=Psalm%20127:3&version=NIV" target="_blank">Psalm 127:3</a>)</p>
+      <p>Then we thought that there might be a market for the idea: writers, roleplayers, other parents, kids at heart - lovers of randomly generated fantasy.</p> 
+      <p>Growing that app into the Master Fantasy Plot Generator took a little more elbow grease and some polish afterward. But it does make a more complete and inventive story. Now the story usually lasts a couple of days, but we have more fun because the kids can get involved and help tell the story. </p>
+      <p>For us it is family time and telling stories. Enjoy and we hope it helps you "generate" similar fond memories.</p> 
+      </br><p><a href="mailto:jteamwebdesign@gmail.com">JTeam</a></p>
+    </div>
+
+  </div>
+
+</body>
+
+  <script type="text/javascript" src="src/lib/xor4096.min.js"></script>
+  <script type="text/javascript" src="src/lib/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="src/lib/jquery.simpleselect.min.js"></script>
+  <script type="text/javascript" src="src/lib/jquery.noty.packaged.min.js"></script>
+  
+  <script type="text/javascript" src="src/lib/three.min.js"></script>
+  <script type="text/javascript" src="src/lib/Detector.js"></script>
+  <script type="text/javascript" src="src/lib/Signal.js"></script>
+  <script type="text/javascript" src="src/lib/OrbitControls.js"></script>
+  <script type="text/javascript" src="src/lib/LinkedList.js"></script>
+
+  <script type="text/javascript" src="src/utils/Tools.js"></script>
+  <script type="text/javascript" src="src/utils/Loader.js"></script>
+  <script type="text/javascript" src="src/graphs/Hex.js"></script>
+  <script type="text/javascript" src="src/graphs/HexGrid.js"></script>
+  <script type="text/javascript" src="src/graphs/SquareGrid.js"></script>
+  <script type="text/javascript" src="src/pathing/Util.js"></script>
+  <script type="text/javascript" src="src/pathing/AStarFinder.js"></script>
+  <script type="text/javascript" src="src/Board.js"></script>
+  <script type="text/javascript" src="src/utils/Scene.js"></script>
+  <script type="text/javascript" src="src/utils/MouseCaster.js"></script>
+  <script type="text/javascript" src="src/Sprite.js"></script>
+  <script type="text/javascript" src="src/utils/SelectionManager.js"></script>
+
+  <script type="text/javascript" src="src/cpx_utilities.js"></script>
+  <script type="text/javascript" src="src/cpx_three.js"></script>
+  <script type="text/javascript" src="src/cpx_data.js"></script>  
+  <script type="text/javascript" src="src/cpx_display.js"></script>  
+  <script type="text/javascript" src="src/cpx_areas.js"></script>  
+  <script type="text/javascript" src="src/cpx_realm.js"></script>
+  <script type="text/javascript" src="src/cpx_assets.js"></script>
+  <script type="text/javascript" src="src/cpx_galaxies.js"></script>  
+  <script type="text/javascript" src="src/cpx_sectors.js"></script>
+  <script type="text/javascript" src="src/cpx_systems.js"></script>
+  <script type="text/javascript" src="src/cpx_factions.js"></script>  
+  <script type="text/javascript" src="src/cpx_player.js"></script>
+  <script type="text/javascript" src="src/cpx_cultures.js"></script>  
+  <script type="text/javascript" src="src/cpx_threats.js"></script>  
+  <script type="text/javascript" src="src/cpx_random_areas.js"></script>
+  <script type="text/javascript" src="src/cpx_start.js"></script>  
+</html>
