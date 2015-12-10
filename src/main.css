@@ -1,0 +1,819 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px Helvetica, Helvetica Neue, Arial;
+    background: rgb(192, 192, 192);
+    margin:0;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 96%;
+    margin: 0 2%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Containers
+   ========================================================================== */
+#cpxcanvas{
+  position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 5em;
+    width: 100%;
+}
+#cpxcanvas canvas{
+    position: absolute;/* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;/* give it dimensions */
+    min-height: 10em;
+    width: 90%;
+    z-index: -5;
+}
+#menu-main {
+  position: fixed;
+  top:0em;
+  height:3em;
+  padding-top:1em;
+  left:1em;
+  z-index: 99;
+}
+#mainmenu-slideout {
+  position: absolute;
+  display:none;
+  top:1.75em;
+  left:.75em;
+  width:175px;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:lightgray;
+  border-radius:5px;
+  z-index:55;
+  border-radius:5px;
+  border:1px solid black;
+}
+#mainmenu-slideout div {
+  padding:0.25em;
+}
+#mainmenu-slideout div:hover {
+  cursor:pointer;
+  text-decoration:underline;
+  background-color:white;
+}
+
+
+#rTimer{
+  position:fixed;
+  top:4em;
+  left:40%;
+  width:20%;
+  max-height:50px; 
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius:5px;
+  font-weight:bold;
+}
+#moreInfo{
+  
+}
+#logMain{
+  display:none;
+  position:fixed;
+  top:0px;
+  bottom:0px; 
+  left:0px;
+  right:50%;
+  margin:0.5em;
+  background-color:white;
+  border-radius:5px;
+  border:1px solid black;
+  overflow-y:auto;
+}
+#logAssault{
+  display:none;
+  position:fixed;
+  top:0px;
+  bottom:0px; 
+  left:25%;
+  right:50%;
+  margin:0.5em;
+  background-color:white;
+  border-radius:5px;
+  border:1px solid black;
+  overflow-y:auto;
+}
+.GMLog {
+  position:absolute;
+  background-color:white;
+  border:1px solid black;
+  display:none;
+  overflow-y:auto;
+  margin:0.5em;
+  top:0px;
+  bottom:0px; 
+}
+#logCulture{
+  left:0px;
+  right:50%;
+}
+#logCultureContent{
+  padding-left:1em;
+  font-size:12px;
+}
+#logThreatContent{
+  padding-left:1em;
+  font-size:12px;
+}
+#logThreat{
+  left:50%;
+  right:0px;
+}
+#footer{
+  position: fixed;
+  left:20%;
+  right:20%;
+  bottom:0;  
+  margin: 0 auto;
+  text-align: center;
+  font-size:0.75em;
+}
+
+.example{
+  border:1px solid black;
+  background-color:Beige;
+  border-radius:5px;
+  padding:0.5em 1em;
+}
+.system {
+  margin-left: 0.5em;
+}
+.systemData {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  border:1px solid black;
+  background-color:rgba(153, 204, 255, 0.25);
+  border-radius:5px;
+}
+.cultureData {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  border:1px solid black;
+  background-color:rgba(153, 204, 255, 0.25);
+  border-radius:5px;
+}
+.info {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+.supportingData {
+  display:none;
+  margin-left: 0.5em;
+  padding: 0.5em;
+}
+.genItem {
+  font-family: Xolonium;
+  text-align:center;
+  padding: 0.5em;
+  border-top:1px solid black;
+  cursor: pointer;
+}
+.genItem:hover {
+  background: -webkit-linear-gradient(#3399FF, rgba(153, 204, 255, 0.25), #3399FF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#3399FF, rgba(153, 204, 255, 0.25), #3399FF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#3399FF, rgba(153, 204, 255, 0.25), #3399FF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#3399FF, rgba(153, 204, 255, 0.25), #3399FF); /* Standard syntax */    
+}
+
+/* ==========================================================================
+   Mainbars styles
+   ========================================================================== */
+.mainbars {
+  display:none;
+  position: fixed;
+  margin:1em;
+  top:4em;
+  bottom:0;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius:5px;
+  overflow-y: hidden;
+  z-index: 2;
+}
+#mRight{
+  right:0;
+  width:250px;
+}
+#mLeft{
+  left:0;
+  width:250px;
+}
+.mainbars h2{
+  margin:0;
+}
+.mainbars .header{
+  background-color:silver;
+  border-radius:5px;
+  margin:0.25em 0em;
+  padding:0.25em 0em;
+}
+
+/* ==========================================================================
+   Character - Player Info Mainbar Left styles
+   ========================================================================== */
+
+#mLeftContent{
+  display:none;  
+}
+#pOptions{
+  display:none;
+}
+#optSelect{
+  border:1px solid black;
+}
+#uActive div{
+  font-size: 14px;
+  padding:0.15em;
+}
+
+
+/* ==========================================================================
+   Mainbar Right styles
+   ========================================================================== */
+
+#mRightContent{
+
+}
+#displayNav{
+
+}
+
+.areaContent{
+  font-size:14px;
+}
+.areaHeader{
+  font-weight:bolder;
+  font-size:18px;
+  padding:0.25em 0em;
+}
+.areaSubHeader{
+  font-weight:bolder;
+  font-size:16px;
+  padding:0.5em 0em;
+}
+
+.areaList{
+  list-style-type:none;
+  padding:0;
+  width:100%;
+}
+.areaList li{
+  padding:0.15em;
+  cursor: pointer; 
+}
+.areaList li:hover{
+  text-decoration:underline;
+  background-color:white;
+}
+.areaList .liContent{
+}
+.hasHero {
+}
+.hasThreats {
+  color:red;
+  font-weight:bold;
+}
+
+
+input.number{
+  width: 50px;
+}
+
+
+/* ==========================================================================
+   TextDisplay
+   ========================================================================== */
+#textDisplay {
+  position:fixed;
+  top:6em;
+  left:20%;
+  width:60%;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius:5px;
+  z-index:1;
+  padding: 0.5em;
+}
+#textDisplay h4{
+  margin:0.5em;
+}
+.bExplore {
+  font-size:15px;
+  font-weight:bold;
+}
+.areaChild {
+  padding: 0.25em;
+  margin-left: 0.5em;
+}
+.areaNeighboor {
+  padding: 0.25em;
+  margin-left: 0.5em;
+}
+button.lTravelTo {
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color:black;
+}
+.lTravelTo {
+  padding: 0.25em;
+  cursor:pointer;
+  text-decoration:underline;
+  font-weight:bold;
+  color:blue;
+}
+.lTravelTo:hover {
+
+  background-color:white;
+  
+}
+
+/* ==========================================================================
+   Plane Array styles
+   ========================================================================== */
+.planeArray{
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  border:1px solid black;
+  border-radius:5px;
+  margin: 0.5em;
+}
+.planeArray h3{
+  margin:0;
+  padding: 0;
+  width:200px;
+}
+.planeArray svg{
+  margin:-1em 0;
+}
+.planeArray .tags{
+  margin:0.5em;
+}
+
+
+
+
+/* ==========================================================================
+   Menu bars custom styles
+   ========================================================================== */
+
+.menu ul{
+  padding:0;
+  margin:0;
+}
+.menu li{
+  border:1px solid black;
+  border-radius:5px;
+  padding:0.25em 0.5em;
+  display:inline-block;
+  font-size:1.0em;
+  cursor:pointer;
+  background-color:Beige;
+}
+.menu li:hover {
+  text-decoration:underline;
+  background-color:DarkKhaki;
+}
+#buttonThreeDisplay{
+  position: absolute;
+  border:1px solid black;
+  border-radius:5px;
+  padding:0.25em 1.5em;
+  top: 1em;
+  right: 1em;
+  cursor:pointer;
+}
+#buttonThreeDisplay:hover {
+  text-decoration:underline;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+@font-face{
+ font-family: Augusta;
+ src: url(Augusta.ttf);
+}
+@font-face {
+    font-family: Xolonium;
+    src: url(Xolonium-Regular.otf);
+}
+p {
+  margin: 0.5em;
+}
+
+.noty_type_confirmation {
+  /* overflow:visible; */
+}
+.content {
+  padding:0.5em;
+}
+.header{
+  
+}
+#header-main h1{
+  position: fixed;
+  right: 1em;
+  font-family: Xolonium;
+  margin:0;
+}
+#header-left{
+  font-family: Xolonium;
+  margin:0;
+}
+
+#logMain h2{
+  margin:0;
+  font-size:16px;
+}
+#logMainContent {
+  margin:0.5em;
+  font-size:12px;
+}
+.GMLog h2{
+  margin:0;
+}
+.starfaring {
+
+}
+.subheader {
+  font-size:1.1em;
+  font-weight:bold;
+}
+.hero {
+  padding-bottom:0.5em;
+  cursor:pointer;
+}
+.hero .buttons{
+  display:none;
+}
+.heroSlide {
+  font-size:14px;
+}
+.heroArea {
+  font-size:14px;
+}
+
+.siteShort {
+
+}
+.buildNote {
+  color:green;
+}
+.moveNote {
+  color:blue;
+}
+.buildNote.sptUnit {
+  color:purple;
+}
+.buildNote.milUnit {
+  color:orangered;
+}
+.assaultNote {
+  color:red;
+}
+.assaultStatus {
+  font-weight:bold;
+  color:red;
+  padding-right:10px;
+}
+.troubleMark{
+  font-weight:bold;
+  color:orangered;
+  padding-right:10px;
+}
+.noreveal {
+  display:none;
+}
+.closeButton {
+  position:absolute;
+  top:5px;
+  right:5px;
+}
+.center{
+  text-align: center;
+}
+.selected{
+  background-color:white;
+}
+
+/* ==========================================================================
+   Hero Info Dialog styles
+   ========================================================================== */
+.dialog-hero{
+  width:325px;
+  background-color:white;
+  padding:.5em;
+  z-index:499;
+}
+.dialog-hero .header{
+  background-color:silver;
+  border-radius:5px;
+  margin:0.25em 0em;
+  padding:0.25em 0em;
+}
+.dHeroSub {
+  
+}
+.heroStats {
+  font-size:13px;
+  font-weight:bold;
+  padding:0.5em 0.5em;
+}
+
+.dialog-hero .dialogClose {
+  position:absolute;
+  top:19px;
+  right:15px;
+  height:20px;
+  width:20px;
+}
+   
+
+
+/* ==========================================================================
+   Buttons classes
+   ========================================================================== */
+.buttons {
+    padding: 3px;
+    margin: 3px;
+}
+.buttons.center {
+    padding-top: 0.6em;
+    margin-top: 0.6em;
+    text-align: center;
+}
+.buttons button {
+    background: #876;
+    border: none;
+    padding: 0.3em 0.7em;
+    margin: 0.2em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.buttons button:hover {
+    background: #987;
+}
+.buttons button + button {
+    margin-left: 0.3em;
+}
+.buttons button[disabled], .buttons button[disabled]:hover {
+    background: #ba9;
+    color: #dcb;
+    cursor: default;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.fixed{
+	position: fixed;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

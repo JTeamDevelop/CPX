@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>CPX</title>
+  
+  <link rel="stylesheet" type="text/css" href="src/main.css">
+  <link rel="stylesheet" type="text/css" href="src/lib/animate.css">
+  <link rel="stylesheet" type="text/css" href="src/lib/jquery-ui.min.css">
+  
+  <style type='text/css'>
+    
+  </style>
+</head>
+
+<body>
+  <div id="cpxcanvas"></div>
+
+  <div class="header" id="header-main"><h1>CPX</h1></div>
+
+	<div class="menu" id="menu-main">
+  		<ul>
+  			<li id="slideMenu"><img src="images/menu3_png_128.png" height="32" width="22"/></li>
+  			<li id="saveRealm" >Save</li>
+		</ul>
+		<div id="mainmenu-slideout">
+			<div id="SectorGen">New Galaxy</div>
+			<div id="displayType" data-type="two">Display Change</div>
+			<div id="clearDB">Clear CPX Database</div>
+		</div>
+	</div>	
+  </div>
+
+  <div class="mainbars" id="mRight">
+    <div class="content" id="mRightContent"></div>
+  </div>
+
+  <div class="mainbars" id="mLeft">
+    <div class="content" id="pOptions"></div>
+    <div class="content" id="mLeftContent"></div>
+    <div class="content" id="uActive"></div>
+    <div class="content" id="displayNav"></div>
+  </div>
+
+  <div class="center" id="rTimer"></div>
+
+  <div id="moreInfo"></div>
+
+  <div id="logMain">
+    <div class="content" id="logMainHeading"><h2>Realm Log</h2></div>
+    <div id="logMainContent"></div>
+  </div>
+
+  <div id="logAssault">
+    <div class="content" id="logAssaultHeading"><h2>Active Assaults</h2></div>
+    <div id="logAssaultContent"></div>
+  </div>
+
+  <div class="GMLog" id="logCulture">
+    <div class="content" id="logCultureHeading"><h2>Culture Log</h2></div>
+    <div id="logCultureContent"></div>
+  </div>
+
+  <div class="GMLog" id="logThreat">
+    <div class="content" id="logThreatHeading"><h2>Threat Log</h2></div>
+    <div id="logThreatContent"></div>
+  </div>
+
+  <div id="footer">
+    The CPX Generators is &copy;2015 <a href="mailto:jteamwebdesign@gmail.com">JTeam Design</a>
+    </br>Code is released under GPL3.
+  </div>
+
+  <div class="hidden">
+    <div class="content" id="about">
+      <p>This project would not have been possible without God. His gifts of code and wisdom enabled everything you see.</p>
+      <p><em>Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. </em>(<a href="http://www.biblegateway.com/passage/?search=James%201:17&version=NIV" target="_blank">James 1:17</a>)</p>
+      </br><p><a href="mailto:jteamwebdesign@gmail.com">JTeam</a></p>
+    </div>
+
+  </div>
+
+</body>
+
+  <script type="text/javascript" src="src/lib/xor4096.min.js"></script>
+
+  <script type="text/javascript" src="src/lib/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="src/lib/jquery-ui.min.js"></script>
+  
+  <script type="text/javascript" src="src/lib/jquery.noty.packaged.min.js"></script>
+  
+
+  <script type="text/javascript" src="src/lib/localforage.min.js"></script>
+  <script type="text/javascript" src="src/lib/pouchdb-5.0.0.min.js"></script>
+
+  <script type="text/javascript" src="src/lib/phaser.min.js"></script>
+
+  <script type="text/javascript" src="src/cpx_utilities.js"></script>
+  <script type="text/javascript" src="src/cpx_db.js"></script>
+  <script type="text/javascript" src="src/cpx_objects.js"></script>
+  <script type="text/javascript" src="src/cpx_twod.js"></script>
+  <script type="text/javascript" src="src/cpx_data.js"></script>  
+  <script type="text/javascript" src="src/cpx_display.js"></script>  
+  <script type="text/javascript" src="src/cpx_areas.js"></script>  
+  <script type="text/javascript" src="src/cpx_realm.js"></script>
+  <script type="text/javascript" src="src/cpx_assault.js"></script>
+  <script type="text/javascript" src="src/cpx_assets.js"></script>
+  <script type="text/javascript" src="src/cpx_heroes.js"></script>
+  <script type="text/javascript" src="src/cpx_galaxies.js"></script>  
+  <script type="text/javascript" src="src/cpx_sectors.js"></script>
+  <script type="text/javascript" src="src/cpx_systems.js"></script>
+  <script type="text/javascript" src="src/cpx_factions.js"></script>  
+  <script type="text/javascript" src="src/cpx_player.js"></script>
+  <script type="text/javascript" src="src/cpx_cultures.js"></script>  
+  <script type="text/javascript" src="src/cpx_threats.js"></script>  
+  <script type="text/javascript" src="src/cpx_random_areas.js"></script>
+  <script type="text/javascript" src="src/cpx_start.js"></script>  
+</html>
